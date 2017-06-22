@@ -11,8 +11,6 @@ This tutorial is meant to be used as a guide to take an already developed MVC 5 
 
 ## Creating an AWS account
 
-[demo](admin-role) 
-
 1. Before beginning to alter your MVC project you have to first sign up for an aws account [Here](https://www.amazon.com/ap/signin?openid.assoc_handle=aws&openid.return_to=https%3A%2F%2Fsignin.aws.amazon.com%2Foauth%3Fresponse_type%3Dcode%26client_id%3Darn%253Aaws%253Aiam%253A%253A015428540659%253Auser%252Fawssignupportal%26redirect_uri%3Dhttps%253A%252F%252Fportal.aws.amazon.com%252Fbilling%252Fsignup%253Fredirect_url%253Dhttps%25253A%25252F%25252Faws.amazon.com%25252Fregistration-confirmation%2526state%253DhashArgs%252523%2526isauthcode%253Dtrue%26noAuthCookie%3Dtrue&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&action=&disableCorpSignUp=&clientContext=&marketPlaceId=&poolName=&authCookies=&pageId=aws.ssop&siteState=registered%2Cen_US&accountStatusPolicy=P1&sso=&openid.pape.preferred_auth_policies=MultifactorPhysical&openid.pape.max_auth_age=120&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&server=%2Fap%2Fsignin%3Fie%3DUTF8&accountPoolAlias=&forceMobileApp=0&language=en_US&forceMobileLayout=0). This signup does require you to input a CC, but my goal here is to only use the supplied free tier services for this tutorial. 
 
 2. Next you need to generate a Key Pair which will be used during deployment. Select services on the top right then under Compute select EC2. You will then see a new horizontal dashboard where you need to select Key Pairs. Once selected click Create Key Pair. Name this key the same as your MVC application for clarity.  You should now see the Key Pair and associated Fingerprint name it will also automatically download the key,you can disregard it for the time being.
@@ -64,7 +62,7 @@ This tutorial is meant to be used as a guide to take an already developed MVC 5 
 
 2. Select create new Environment, then select Web server environment. For platform select .NET and for application code select upload your code and direct it to the zip build we created in your root project folder. Now select configure more options. Most of these options can stay as defaults but to keep this completely free select modify on the instances box and change the instance type to t2.micro and the size to 8GB and finally select create. Also modify the security box adding in the key pair you created earlier. Finally, select create environment. This will then take you to a progress window and the deployment takes a few minutes. 
 
-3. Now that it is deployed you can keep it hosted or terminate the environment. Make sure you look into how the service is billed so you don't get hit with unexpected charges!
+3. Now that it is deployed click the link to see your webpage! you can keep it hosted or terminate the environment. Make sure you look into how the service is billed so you don't get hit with unexpected charges. [Here](https://aws.amazon.com/free/)
 
 ## Conclusion
 
