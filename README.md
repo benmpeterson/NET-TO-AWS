@@ -76,7 +76,7 @@ cs```
 
 ```
 
-
+3. Save the new connection string and run the project in Google Chrome. Try to create a new user, if it works you have successfully linked the project to the Database. And hopefully the connection string didn't give you as much trouble as it gave me!
 
 
 
