@@ -64,6 +64,10 @@ This tutorial is meant to be used as a guide to take an already developed MVC 5 
 
 2. Select create new Environment, then select Web server environment. For platform select .NET and for application code select upload your code and direct it to the zip build we created in your root project folder. Now select configure more options. Most of these options can stay as defaults but to keep this completely free select modify on the instances box and change the instance type to t2.micro and the size to 8GB and finally select create. Also modify the security box adding in the key pair you created earlier. Finally, select create environment. This will then take you to a progress window and the deployment takes a few minutes. 
 
+3. Now that it is deployed you can keep it hosted or terminate the environment. Make sure you look into how the service is billed so you don't get hit with unexpected charges!
+
 ## Conclusion
+
+That's it for Part 1. Part 2 will show you how to implement lambda scripts to keep your site live for only certain times of the day.
 
 I hope you found this helpful, you can email me with any questions at ben.micah.peterson@gmail.com
