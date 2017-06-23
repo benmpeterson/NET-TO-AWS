@@ -1,6 +1,6 @@
 [![awshosting.jpg](https://s23.postimg.org/r8tp1no5n/awshosting.jpg)](https://postimg.org/image/l7w04l1jb/)
 
-This tutorial is meant to be used as a guide to take an already developed MVC 5 application with a LocalDb MSSQL server and present the steps of re-hosting in on the AWS cloud using Elastic Beanstalk and an RSD MSSQL Express server. Most of this material is aggregated from other online resources which I have credited below. You will need Visual Studio 2017, Microsoft Server Management Studio, and Windows 10 for this tutorial to work. You can either follow along with the project provided, or use your own. Enjoy!
+This tutorial is meant to be used as a guide to take an already developed MVC 5 application with a LocalDb MSSQL server and present the steps of re-hosting in on the AWS cloud using Elastic Beanstalk and an RDS MSSQL Express server. Most of this material is aggregated from other online resources which I have credited below. You will need Visual Studio 2017, Microsoft Server Management Studio, and Windows 10 for this tutorial to work. You can either follow along with the project provided, or use your own. Enjoy!
 
 ## Libraries and Resources Used 
 
