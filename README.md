@@ -62,14 +62,14 @@ Part 1 of this tutorial is meant to be used as a guide to take an already develo
 
 2. Select create new Environment, then select Web server environment. For platform select .NET and for application code select upload your code and direct it to the zip build we created in your root project folder. Now select configure more options. Most of these options can stay as defaults but to keep this completely free select modify on the instances box and change the instance type to t2.micro and the size to 30GB, and in the scaling box change from load balanced to signle instance. Finally in the security box add in the key pair you created earlier. Now create the environment. This will take you to a progress window and the deployment takes a few minutes. 
 
-3. Now that it is deployed click the URL link to see your webpage! you can keep it hosted or terminate the environment. Make sure you look into how the service is billed so you don't get hit with unexpected charges. [Here](https://aws.amazon.com/free/)
+3. Now that it is deployed click the URL link to see your webpage! you can keep it hosted or terminate the environment. Make sure you look into how the service is billed [Here](https://aws.amazon.com/free/)
 
 
 ## Part 2 - Automating activity hours
 
 Amazon Web Services have extensive tooling when it comes to automating specific functions of your web site including scripting checks to make sure the EC2 instance is running correctly, or changing what times of the day the EC2 instance is operational. For this example we will go through the steps to keep a single instance web page functional from 9 am - 5 pm daily, while turning off the service during off hours. 
 
-1. When using the Elastic Beanstalk wizard to deploy your site it automatically configures auto scaling, which in most cases is beneficial. However, for out purposes we need to turn that feature off so AWS does not try to automatically create a new RC2 instance when stop the running one. From the Services tab, select EC2. Then from the side menu scroll down and select Auto Scaling Groups. You should see a group that AWS has created for you. 
+1. When using the Elastic Beanstalk wizard to deploy your site it automatically configures auto scaling, which in most cases is beneficial. However, for our purposes we need to turn that feature off so AWS does not try to automatically create a new RC2 instance when we stop the running one. From the Services tab, select EC2. Then from the side menu scroll down and select Auto Scaling Groups. You should see a group that AWS has created for you. 
 
 2. First select Edit on the Details tab and change the Min number of instances running to 0, leaving the max at 1. Next Select the Instances tab and highlight your instance. Once highlighted, select Actions and choose Detach. This will detach the RC2 instance that is hosting your Web Page from the auto scale group, eliminating the possibilities of AWS automatically scaling or creating a new instance for you. Again, this exercise is not something you would do on a official production product, but works great for static resume type webpages. A detach instance warning will pop up, do not check any of the boxes, and finally select detach instance.    
 
