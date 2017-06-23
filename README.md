@@ -5,7 +5,7 @@ This tutorial is meant to be used as a guide to take an already developed MVC 5 
 ## Libraries and Resources Used 
 
 - [Sample Project](https://github.com/benmpeterson/NET-TO-AWS) - Clone this repo to start with the tutorial MVC project
-- [MATT Perderc](https://www.codeproject.com/Articles/889059/Amazon-Web-Services-part-How-to-deploy-a-load-bala#sourcebundle) - Great Tutorial that expands on the AWS Part 1 and 2 are excellent.
+- [Matt Perderc](https://www.codeproject.com/Articles/889059/Amazon-Web-Services-part-How-to-deploy-a-load-bala#sourcebundle) - Great Tutorial that expands on the AWS Part 1 and 2 are excellent.
 - [AWS - EC2 Automation](https://aws.amazon.com/premiumsupport/knowledge-center/start-stop-lambda-cloudwatch/) - This will be gone over in part two, but this article outlines how to turn off your EC2 service during the night. 
 
 
